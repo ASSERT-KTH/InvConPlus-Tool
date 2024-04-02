@@ -1,0 +1,1766 @@
+{
+    "variables": [
+        {
+            "contractName": "GameChannel",
+            "varName": "owner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "pendingOwner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": "0x0000000000000000000000000000000000000000",
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "activated",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": true,
+            "varSlot": 1,
+            "varOffset": 20
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "paused",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": false,
+            "varSlot": 1,
+            "varOffset": 21
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "timePaused",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 0,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "conflictRes",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "newConflictRes",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "updateTime",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "DOMAIN_SEPERATOR",
+            "varType": "bytes32",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 6,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "activeGames",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 2,
+            "varSlot": 7,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "gameIdCntr",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 4044,
+            "varSlot": 8,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "serverAddress",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 9,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "houseAddress",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 10,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "houseStake",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 49824660900000000000,
+            "varSlot": 11,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "houseProfit",
+            "varType": "int256",
+            "varBytes": 32,
+            "varValue": 115792089237316195423570985008687907853269984665640564039457408668813129639936,
+            "varSlot": 12,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "minStake",
+            "varType": "uint128",
+            "varBytes": 16,
+            "varValue": null,
+            "varSlot": 13,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "maxStake",
+            "varType": "uint128",
+            "varBytes": 16,
+            "varValue": null,
+            "varSlot": 13,
+            "varOffset": 16
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "profitTransferTimeSpan",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 14,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "lastProfitTransferTimestamp",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 15,
+            "varOffset": 0
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "gameIdGame",
+            "varType": "mapping(uint256 => GameChannelBase.Game)",
+            "varBytes": 32,
+            "varValue": {
+                "4031": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121367,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 10000000000000000,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121367,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121367,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121367,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121368,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121369,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121370,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121371,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121372,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121373,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 15005577964534415610149766909725736262296319116018119527695690414393161121367,
+                    "varOffset": null
+                },
+                "4032": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451896,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 1000000000000000000,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451896,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451896,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451896,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451897,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451898,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451899,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451900,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451901,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451902,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 14114532628816693659007251529409625934215316550728529462542541935414816451896,
+                    "varOffset": null
+                },
+                "4033": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097700,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 20000000000000000,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097700,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097700,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097700,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097701,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097702,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097703,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097704,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097705,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097706,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 101425573141170594462773795208720843162741648330209782236060932607860799097700,
+                    "varOffset": null
+                },
+                "4034": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845235,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 20000000000000000,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845235,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845235,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845235,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845236,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845237,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845238,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845239,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845240,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845241,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 16844715514887711334327731636808358581562585665447929768366666719118256845235,
+                    "varOffset": null
+                },
+                "4035": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 3,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866490,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 20000000000000000,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866490,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 4,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866490,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 3,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866490,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 1,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866491,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 320000000000000,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866492,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": 115792089237316195423570985008687907853269984665640564039457583998313129639936,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866493,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": "0xc2a85ef411fa40b3b75b1296c14658f92dc5913abecffcf6a472de867256c722",
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866494,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": "0xa5b21121271032a84791376fdb71c1a76034a541de650c985e1ff194d344a486",
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866495,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 1549814475,
+                            "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866496,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 86022606838235355695430337136756802411880600949429446268174440561615093866490,
+                    "varOffset": null
+                },
+                "4036": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961667,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 40000000000000000,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961667,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961667,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961667,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961668,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961669,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961670,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961671,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961672,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961673,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 80409562965616409976656090003619705766094449540404995229683848595833591961667,
+                    "varOffset": null
+                },
+                "4037": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902271,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 10000000000000000,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902271,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902271,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902271,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902272,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902273,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902274,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902275,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902276,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902277,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 10426507807973201696176788675357147589629785604407592464968155826311608902271,
+                    "varOffset": null
+                },
+                "4038": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794645,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 10000000000000000,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794645,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794645,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794645,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794646,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794647,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794648,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794649,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794650,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794651,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 70084944331849604311712005482194357047282077773871598248512596058877344794645,
+                    "varOffset": null
+                },
+                "4039": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536292,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 30000000000000000,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536292,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536292,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536292,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536293,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536294,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536295,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536296,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536297,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536298,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 12614232217053153279289131216890679035913613923735403305868336416720057536292,
+                    "varOffset": null
+                },
+                "4040": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623443,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 30000000000000000,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623443,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623443,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623443,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623444,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623445,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623446,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623447,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623448,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623449,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 27275161752732552990760939232180422350271896814269723947692967036237471623443,
+                    "varOffset": null
+                },
+                "4041": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537350,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 20000000000000000,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537350,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537350,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537350,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537351,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537352,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537353,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537354,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537355,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537356,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 111194922241701382468638639156786479502971365659182703126519049458591967537350,
+                    "varOffset": null
+                },
+                "4042": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656954,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 40000000000000000,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656954,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656954,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656954,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656955,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656956,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656957,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656958,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656959,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656960,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 98272107338053653687596100370352374580824231676486746916326117897704305656954,
+                    "varOffset": null
+                },
+                "4043": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "GameChannelBase.Game",
+                    "varBytes": 214,
+                    "varValue": [
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "status",
+                            "varType": "enum_GameChannelBase.GameStatus",
+                            "varBytes": 1,
+                            "varValue": 1,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646442,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "stake",
+                            "varType": "uint128",
+                            "varBytes": 16,
+                            "varValue": 20000000000000000,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646442,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "gameType",
+                            "varType": "uint8",
+                            "varBytes": 1,
+                            "varValue": 0,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646442,
+                            "varOffset": 17
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "roundId",
+                            "varType": "uint32",
+                            "varBytes": 4,
+                            "varValue": 0,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646442,
+                            "varOffset": 18
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betNum",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646443,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "betValue",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646444,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "balance",
+                            "varType": "int256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646445,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "userSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646446,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "serverSeed",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646447,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "GameChannel",
+                            "varName": "endInitiatedTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646448,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 111366745634258420206017404382949637914250548450000278084781525590918804646442,
+                    "varOffset": null
+                }
+            },
+            "varSlot": 16,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "GameChannelBase.Game",
+                "varBytes": 214,
+                "varValue": [
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "status",
+                        "varType": "enum_GameChannelBase.GameStatus",
+                        "varBytes": 1,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "stake",
+                        "varType": "uint128",
+                        "varBytes": 16,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 1
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "gameType",
+                        "varType": "uint8",
+                        "varBytes": 1,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 17
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "roundId",
+                        "varType": "uint32",
+                        "varBytes": 4,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 18
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "betNum",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 1,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "betValue",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 2,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "balance",
+                        "varType": "int256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 3,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "userSeed",
+                        "varType": "bytes32",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 4,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "serverSeed",
+                        "varType": "bytes32",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 5,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "GameChannel",
+                        "varName": "endInitiatedTime",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 6,
+                        "varOffset": 0
+                    }
+                ],
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "userGameId",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {
+                "0xa51addee323697f1021024f056c6465aee755a92": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4031,
+                    "varSlot": 83675635220200469428873917307379708467972458011561171897195159809624771061489,
+                    "varOffset": 0
+                },
+                "0xe3aad2d4f9545d3ce53bb5cd9ca929a9f7995837": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4032,
+                    "varSlot": 115450388170742552197869868378728085961703479554997907521434535101424778311845,
+                    "varOffset": 0
+                },
+                "0x7e177fd82c300d08555d8d1246c04a835b943920": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4033,
+                    "varSlot": 8294956032915230862865154970361608165266761660088320209782576678193335726944,
+                    "varOffset": 0
+                },
+                "0x8541ec05768446bcb7116d677e04774636c68722": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4034,
+                    "varSlot": 114468144336461508427907638414413979313883570042394403790554805998916162108454,
+                    "varOffset": 0
+                },
+                "0xa65774227dc577b12f5b36b1a58079a0bf04dd08": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4035,
+                    "varSlot": 111787940652097665050878270298996017793713916217272636989301412192556499132192,
+                    "varOffset": 0
+                },
+                "0x7b0bb595b6ab3f2f4b4ae6920d410fd86be3e225": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4036,
+                    "varSlot": 114232913905214739241158423730897385855129927547922387119960821932769151968655,
+                    "varOffset": 0
+                },
+                "0x0ef25d81427680b047278c020177209c6daff9db": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4037,
+                    "varSlot": 74729704327282265848650311173555603804833908010585906846719809957537660157248,
+                    "varOffset": 0
+                },
+                "0xe19122eef256f2acd0388759b974509913373208": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4038,
+                    "varSlot": 114653055106108788541192766057107969394446807403718327566719053048220444513211,
+                    "varOffset": 0
+                },
+                "0x53190b2ac6287be7bc622fa9d3f211702999d7f5": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4039,
+                    "varSlot": 56797138023837528902021637074014848978148378334187841349041341401957255195068,
+                    "varOffset": 0
+                },
+                "0x1fa2ba288b9d895b38e2ebcd2675b4c8e1c17dce": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4040,
+                    "varSlot": 43385825726432045256529593996990372744977499127211757524825136571202002549968,
+                    "varOffset": 0
+                },
+                "0x86c0a16ac019ee295949ee407a065b33c548ad11": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4041,
+                    "varSlot": 36292590593121771604981076662101642844357883117301622394048228638546822390781,
+                    "varOffset": 0
+                },
+                "0xa501b93c22fc8987da18e86b6d638b690537d28b": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4042,
+                    "varSlot": 94266586726860565910369985538867399496910229649754187846386845460034866947633,
+                    "varOffset": 0
+                },
+                "0xcf74582bfb803e77921f82e5f1f02587644eedac": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 4043,
+                    "varSlot": 75832426053135015195950296030458048960573032946407987563459454630541068299406,
+                    "varOffset": 0
+                }
+            },
+            "varSlot": 17,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "GameChannel",
+            "varName": "pendingReturns",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {},
+            "varSlot": 18,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        }
+    ]
+}

@@ -99,7 +99,7 @@ if __name__ == "__main__":
                         help='the number of transactions used,\
                               (default, 500)')
     
-    parser.add_argument('--minSupport', type=int, required=False, default=50, 
+    parser.add_argument('--minSupport', type=int, required=False, default=10, 
                         help='the number of minimum transactions used,\
                               (default, 50)')
     

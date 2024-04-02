@@ -162,6 +162,7 @@ class MyContract:
                     funcDep.addDependency(leftVarInfo, rightVarInfo)
                     return [leftVarInfo,exp.type.name,rightVarInfo]
             elif isinstance(exp, IndexAccess):
+                print("This is indexacess", IndexAccess)
                 left: Expression  = exp.expression_left
                 right: Expression  = exp.expression_right
                 # return exploreEx(left)+"["+exploreEx(right)+"]"
@@ -176,11 +177,11 @@ class MyContract:
                             logging.error("baseVar or indexVar is dict")
                             if "callee" in indexVar and indexVar["callee"] == "_msgSender":
                                 if isinstance(baseVar, VarInfo):
-                                    return VarInfo(name=baseVar.name+"[msg.sender]", type = exp.type, vartype= baseVar.vartype, derivation=MappingItem([baseVar, VarInfo(name = "msg.sender", type= "address", vartype= VarType.TXVAR, derivation=None )], ppt_slice=None))
+                                    return VarInfo(name=baseVar.name+"[msg.sender]", type = str(baseVar.type), vartype= baseVar.vartype, derivation=MappingItem([baseVar, VarInfo(name = "msg.sender", type= "address", vartype= VarType.TXVAR, derivation=None )], ppt_slice=None))
                             else:
                                 return None 
                         elif isinstance(baseVar, VarInfo) and isinstance(indexVar, VarInfo):
-                            return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = exp.type, vartype= baseVar.vartype, derivation=MappingItem([baseVar, indexVar], ppt_slice=None))
+                            return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = str(baseVar.type), vartype= baseVar.vartype, derivation=MappingItem([baseVar, indexVar], ppt_slice=None))
                         else:
                             return None
                 elif ArrayItem.valid_vars([baseVar, indexVar]):
@@ -189,11 +190,11 @@ class MyContract:
                         # return VarInfo(name=baseVar.name+"["+indexVar+"]", type = exp.type, vartype= baseVar.vartype, derivation=None)
                     else:
                         if isinstance(baseVar, VarInfo) or isinstance(indexVar, VarInfo):
-                            return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = exp.type, vartype= baseVar.vartype, derivation=ArrayItem([baseVar, indexVar], ppt_slice=None))
+                            return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = str(baseVar.type), vartype= baseVar.vartype, derivation=ArrayItem([baseVar, indexVar], ppt_slice=None))
                         else:
                             return None 
                 elif isinstance(indexVar, VarInfo) and isinstance(baseVar, VarInfo):
-                    return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = exp.type, vartype= baseVar.vartype, derivation=MappingItem([baseVar, indexVar], ppt_slice=None))
+                    return VarInfo(name=baseVar.name+"["+indexVar.name+"]", type = str(baseVar.type), vartype= baseVar.vartype, derivation=MappingItem([baseVar, indexVar], ppt_slice=None))
                 else:
                     return None 
                    
