@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-# Install system dependencies
+# Install all system dependencies in one layer
 # hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y --no-install-recommends \
         python3.10 \
@@ -23,36 +23,34 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         libssl-dev \
         libffi-dev \
-        # Java required by Daikon
         default-jdk \
-        # Node.js required by AutoAnnotation/VeriSol pipeline
         nodejs \
         npm \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install chifra (TrueBlocks) for transaction listing
-# hadolint ignore=DL3008
-RUN apt-get update && apt-get install -y --no-install-recommends \
         libcurl4-openssl-dev \
         clang \
         cmake \
         ninja-build \
+        clang-format \
+        jq \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Go (required to build chifra from source)
-RUN wget -q https://go.dev/dl/go1.21.0.linux-amd64.tar.gz \
-    && tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz \
-    && rm go1.21.0.linux-amd64.tar.gz
+# Install Go 1.23 (required by chifra)
+RUN wget -q https://go.dev/dl/go1.23.0.linux-amd64.tar.gz \
+    && tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz \
+    && rm go1.23.0.linux-amd64.tar.gz
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
 # Build and install chifra from source
 # hadolint ignore=DL3003
-RUN git clone --depth 1 https://github.com/TrueBlocks/trueblocks-core.git /tmp/trueblocks \
-    && mkdir /tmp/trueblocks/build \
-    && cmake -GNinja -S /tmp/trueblocks -B /tmp/trueblocks/build \
-    && ninja -C /tmp/trueblocks/build \
-    && cp /tmp/trueblocks/build/bin/chifra /usr/local/bin/chifra \
+RUN git clone --depth 1 --recurse-submodules \
+        https://github.com/TrueBlocks/trueblocks-core.git /tmp/trueblocks \
+    && cd /tmp/trueblocks \
+    && bash scripts/go-work-sync.sh \
+    && mkdir build \
+    && cmake -GNinja -S src -B build \
+    && ninja -C build \
+    && cp build/bin/chifra /usr/local/bin/chifra \
     && rm -rf /tmp/trueblocks
 
 WORKDIR /app
