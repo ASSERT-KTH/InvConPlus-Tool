@@ -47,33 +47,26 @@ RUN wget -q https://go.dev/dl/go1.21.0.linux-amd64.tar.gz \
 ENV PATH="/usr/local/go/bin:${PATH}"
 
 # Build and install chifra from source
+# hadolint ignore=DL3003
 RUN git clone --depth 1 https://github.com/TrueBlocks/trueblocks-core.git /tmp/trueblocks \
-    && cd /tmp/trueblocks \
-    && mkdir build && cd build \
-    && cmake -GNinja .. \
-    && ninja \
-    && cp bin/chifra /usr/local/bin/chifra \
+    && mkdir /tmp/trueblocks/build \
+    && cmake -GNinja -S /tmp/trueblocks -B /tmp/trueblocks/build \
+    && ninja -C /tmp/trueblocks/build \
+    && cp /tmp/trueblocks/build/bin/chifra /usr/local/bin/chifra \
     && rm -rf /tmp/trueblocks
 
 WORKDIR /app
 
-# Copy and install Python dependencies
+# Copy and install Python dependencies, patch API keys, verify import
 COPY requirements.txt .
+COPY . .
 # hadolint ignore=DL3013
 RUN pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir -r requirements.txt
-
-# Copy source
-COPY . .
-
-# Patch hardcoded API keys to use environment variables
-# 1. Etherscan key in SourcecodeProvider.py
-RUN sed -i \
-    's|etherscan_api_key="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C"|etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", "")|g' \
-    invconplus/plugin/SourcecodeProvider.py
-
-# 2. QuickNode URL in quickNode.py - use Python to avoid shell escaping issues
-RUN python3 - <<'EOF'
+    && pip3 install --no-cache-dir -r requirements.txt \
+    && sed -i \
+        's|etherscan_api_key="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C"|etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", "")|g' \
+        invconplus/plugin/SourcecodeProvider.py \
+    && python3 - <<'EOF'
 import re
 path = "invconplus/plugin/quickNode.py"
 content = open(path).read()
@@ -86,8 +79,6 @@ if "import os" not in content:
     content = "import os\n" + content
 open(path, "w").write(content)
 EOF
-
-# Verify the module is importable
 RUN python3 -c "import invconplus; print('invconplus import OK')"
 
 # Runtime environment variables (must be provided at docker run time)
