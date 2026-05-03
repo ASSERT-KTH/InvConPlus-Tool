@@ -58,7 +58,7 @@ RUN git clone --depth 1 https://github.com/TrueBlocks/trueblocks-core.git /tmp/t
 WORKDIR /app
 
 # Copy and install Python dependencies, patch API keys, verify import
-COPY requirements.txt .
+COPY requirements.txt patch_keys.py ./
 COPY . .
 # hadolint ignore=DL3013
 RUN pip3 install --no-cache-dir --upgrade pip \
@@ -66,20 +66,8 @@ RUN pip3 install --no-cache-dir --upgrade pip \
     && sed -i \
         's|etherscan_api_key="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C"|etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", "")|g' \
         invconplus/plugin/SourcecodeProvider.py \
-    && python3 - <<'EOF'
-import re
-path = "invconplus/plugin/quickNode.py"
-content = open(path).read()
-content = re.sub(
-    r"url = 'https://[^']+quiknode\.pro/[^']*/'",
-    "url = os.environ.get('QUICKNODE_URL', '')",
-    content
-)
-if "import os" not in content:
-    content = "import os\n" + content
-open(path, "w").write(content)
-EOF
-RUN python3 -c "import invconplus; print('invconplus import OK')"
+    && python3 patch_keys.py \
+    && python3 -c "import invconplus; print('invconplus import OK')"
 
 # Runtime environment variables (must be provided at docker run time)
 ENV ETHERSCAN_API_KEY="" \
